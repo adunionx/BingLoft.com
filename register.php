@@ -11,7 +11,7 @@ Script is created and provided by Pranto (http://facebook.com/pranto007)
 include 'db.php';
 include 'functions.php';
 
-headtag("$Sitename - Registration");
+headtag("$Sitename BingLoft.Com - Registration");
 
  if($userlog==1){
    header('Location:/');
@@ -121,13 +121,13 @@ $userid=$userdat['id'];
 
 
     $to      = $email;
-    $subject = 'Registration at BingLoft';
+    $subject = 'Registration at BingLoft.Com';
     $message = 'Dear '.$userdat["firstname"].',
-Welcome to Adsgem Advertise Network!
+Welcome to BingLoft.Com Advertisement Network!
 
 Just one more step to complete your registration with AdUnion! Please click bellow link or alternatively copy and paste the url to your browser!
 
-http://adunion.x20.asia/verify/'.$userid.'/'.$token.'
+http://bingloft.com/verify/'.$userid.'/'.$token.'
 
 
 Once you completed the registration procedure you can add your mobile site and start earning revenue!
@@ -138,11 +138,11 @@ natanray321@gmail.com
 +91-7384087247
 
 Thanks,
-AdUnion Team,
-AdUnion Pvt. Ltd';
-    $headers = 'From: AdUnion<natanray321@gmail.com>' . "\r\n" .
+BingLoft Team,
+BingLoft.Com Pvt. Ltd';
+    $headers = 'From: BingLoft.Com<natanray321@gmail.com>' . "\r\n" .
     'Reply-To: natanray321@gmail.com' . "\r\n" .
-    'X-Mailer: Adsgem';
+    'X-Mailer: BingLoft;
 
     mail($to, $subject, $message, $headers);
 $_SESSION['adsgem_email']=$email;
